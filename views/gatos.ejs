@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gatitos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <h1 class="BA67C8">Gatos con EJS</h1>
+
+    <% for (let i in gatos) { %>
+        <a href="details/<%= i %>"><img class="gatitos" src="image/<%= gatos[i].img %>" alt="<%= gatos[i].id %>"></a>
+    
+    <% } %>
+</body>
+</html>
