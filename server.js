@@ -20,7 +20,7 @@ const gatos = [
     img: "gato2.jpg", 
     edad: "5 meses", 
     comidaFav: "carne", 
-    lugaresDondeDuerme: ["en una cama", "en una caja"] 
+    lugaresDondeDuerme: ["en una cama", "en una caja", "en la colcha del gato de la jenny"] 
   },
   { 
     id: "cat3", 
@@ -41,7 +41,9 @@ app.get("/details", (req,res)=>{
 
 app.get("/details/:id", (req,res)=>{
   const id = req.params.id;
-  res.send(
+  res.render("details", { gatos : gatos[id] }); 
+}); 
+/*  res.send(
     `<!DOCTYPE html>
     <html lang="en">
       <head>
@@ -65,7 +67,7 @@ app.get("/details/:id", (req,res)=>{
     </html>`
   );
 });
-
+*/
 const server = app.listen(8000, () =>
 console.log(`el server esta usando el puerto: ${server.address().port}!`)
 );

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gato: <%= gatos.id %> </title>
+        <link rel="stylesheet" href="../css/styles.css">
+      </head>
+      <body>   
+        <h1 class="titulo">Details Page for Cuddles</h1>
+        <img class="gatito2" src="../image/<%= gatos.img %>" alt="<%= gatos.id %>">    
+        <h4 class="BA67C8v1"><%= gatos.comidaFav %></h4>
+        <h4 class="BA67C8v2" ><%= gatos.edad %></h4>
+        <div class="BA67C8v3"> 
+        <p>lugares donde duerme:</p> 
+          <ul>
+            <% for (let i in gatos.lugaresDondeDuerme) { %>
+              <li><%= gatos.lugaresDondeDuerme[i] %></li>        
+            <% } %>
+          </ul> 
+      </body>
+    </html>
