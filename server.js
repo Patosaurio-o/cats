@@ -42,6 +42,9 @@ app.get("/details", (req,res)=>{
 app.get("/details/:id", (req,res)=>{
   const id = req.params.id;
   res.render("details", { gatos : gatos[id] }); 
+  if(id != undefined){
+    res.redirect("/index.html")
+  }
 }); 
 /*  res.send(
     `<!DOCTYPE html>

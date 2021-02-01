@@ -4,19 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>gato: <%= gatos.id %> </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/styles.css">
       </head>
-      <body>   
-        <h1 class="titulo">Details Page for Cuddles</h1>
-        <img class="gatito2" src="../image/<%= gatos.img %>" alt="<%= gatos.id %>">    
-        <h4 class="BA67C8v1"><%= gatos.comidaFav %></h4>
-        <h4 class="BA67C8v2" ><%= gatos.edad %></h4>
-        <div class="BA67C8v3"> 
-        <p>lugares donde duerme:</p> 
-          <ul>
-            <% for (let i in gatos.lugaresDondeDuerme) { %>
-              <li><%= gatos.lugaresDondeDuerme[i] %></li>        
-            <% } %>
-          </ul> 
+      <body> 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="titulo">Details Page for Cuddles</h1>
+              <img class="gatito2 mt-3" src="../image/<%= gatos.img %>" alt="<%= gatos.id %>">    
+              <h4 class="BA67C8v1 m-3"><%= gatos.comidaFav %></h4>
+              <h4 class="BA67C8v2 m-3" ><%= gatos.edad %></h4>
+              <div class="BA67C8v3 m-3"> 
+              <p>lugares donde duerme:</p> 
+              <ul>
+                <% for (let i in gatos.lugaresDondeDuerme) { %>
+                  <li><%= gatos.lugaresDondeDuerme[i] %></li>        
+                <% } %>
+              </ul> 
+            </div>
+          </div>
+        </div>    
       </body>
     </html>
