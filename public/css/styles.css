@@ -8,6 +8,15 @@
   border-radius: 220px;
 }
 
+.gatito2 {
+  display: block;
+  height: 260px;
+  width: 360px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 220px;
+}
+
 .BA67C8 {
   background-color: #a850b8;
   text-align: center;
@@ -16,3 +25,30 @@
   padding: 20px;
 }
 
+.titulo {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.BA67C8v1 {
+  background-color: #d487e2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.BA67C8v2 {
+  background-color: #a850b8;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.BA67C8v3 {
+  background-color: #5b0b69;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
