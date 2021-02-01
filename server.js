@@ -61,7 +61,6 @@ app.get("/details/:id", (req,res)=>{
             <li>${gatos[id].lugaresDondeDuerme[0]}</li>
             <li>${gatos[id].lugaresDondeDuerme[1]}</li>
           </ul> 
-        </div>   
       </body>
     </html>`
   );
